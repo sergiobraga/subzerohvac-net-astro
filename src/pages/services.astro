@@ -12,103 +12,267 @@ import { SITE_TITLE } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>Our Services</h1>
-			<p class="intro">
-				At Subzero HVAC, we provide comprehensive heating, ventilation, and air conditioning services 
-				to keep your home or business comfortable year-round. Our certified technicians are committed 
-				to delivering exceptional service with every job.
-			</p>
-
-			<section class="service">
-				<h2>🏠 Residential HVAC Services</h2>
-				<h3>Air Conditioning</h3>
-				<ul>
-					<li><strong>AC Installation:</strong> Expert installation of central air conditioning systems, ductless mini-splits, and heat pumps</li>
-					<li><strong>AC Repair:</strong> Fast, reliable repairs for all makes and models</li>
-					<li><strong>AC Maintenance:</strong> Seasonal tune-ups to keep your system running efficiently</li>
-					<li><strong>AC Replacement:</strong> Upgrade to a new, energy-efficient cooling system</li>
-				</ul>
-
-				<h3>Heating Systems</h3>
-				<ul>
-					<li><strong>Furnace Installation:</strong> Gas, electric, and oil furnace installation</li>
-					<li><strong>Furnace Repair:</strong> Quick diagnosis and repair of heating issues</li>
-					<li><strong>Heat Pump Services:</strong> Installation, repair, and maintenance of heat pump systems</li>
-					<li><strong>Boiler Services:</strong> Boiler installation, repair, and maintenance</li>
-				</ul>
-
-				<h3>Indoor Air Quality</h3>
-				<ul>
-					<li><strong>Air Purification Systems:</strong> Whole-home air purifiers and UV light systems</li>
-					<li><strong>Humidifiers & Dehumidifiers:</strong> Maintain optimal humidity levels</li>
-					<li><strong>Air Duct Cleaning:</strong> Professional duct cleaning for healthier air</li>
-					<li><strong>Ventilation Solutions:</strong> Energy recovery ventilators and fresh air systems</li>
-				</ul>
+		<main class="services-page">
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-content">
+					<h1>Excellence in Every Service</h1>
+					<p class="hero-subtitle">
+						Premium HVAC solutions engineered for your comfort
+					</p>
+				</div>
 			</section>
 
-			<section class="service">
-				<h2>🏢 Commercial HVAC Services</h2>
-				<ul>
-					<li><strong>Commercial Installation:</strong> Rooftop units, split systems, and packaged HVAC systems</li>
-					<li><strong>Preventive Maintenance:</strong> Scheduled maintenance programs to minimize downtime</li>
-					<li><strong>Emergency Repairs:</strong> 24/7 commercial HVAC repair services</li>
-					<li><strong>Energy Audits:</strong> Identify opportunities to reduce energy costs</li>
-					<li><strong>System Design:</strong> Custom HVAC solutions for new construction and renovations</li>
-				</ul>
+			<!-- Services Grid -->
+			<section class="services-showcase">
+				<div class="container">
+					<!-- Cooling Solutions -->
+					<div class="service-feature cooling">
+						<div class="feature-content">
+							<div class="feature-badge">Cooling</div>
+							<h2>Stay Cool. Stay Comfortable.</h2>
+							<p class="feature-description">
+								Experience precision cooling with our advanced air conditioning solutions. 
+								From whisper-quiet operation to intelligent climate control, we deliver 
+								comfort that adapts to your lifestyle.
+							</p>
+							<div class="feature-list">
+								<div class="feature-item">
+									<div class="item-icon">❄️</div>
+									<div class="item-content">
+										<h4>Central Air Systems</h4>
+										<p>Whole-home cooling with energy-efficient performance</p>
+									</div>
+								</div>
+								<div class="feature-item">
+									<div class="item-icon">💨</div>
+									<div class="item-content">
+										<h4>Ductless Mini-Splits</h4>
+										<p>Zone control for personalized comfort in every room</p>
+									</div>
+								</div>
+								<div class="feature-item">
+									<div class="item-icon">🔧</div>
+									<div class="item-content">
+										<h4>Repair & Maintenance</h4>
+										<p>Expert service to keep your system running flawlessly</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="feature-visual cooling-visual"></div>
+					</div>
+
+					<!-- Heating Solutions -->
+					<div class="service-feature heating">
+						<div class="feature-visual heating-visual"></div>
+						<div class="feature-content">
+							<div class="feature-badge">Heating</div>
+							<h2>Warmth. Redefined.</h2>
+							<p class="feature-description">
+								Advanced heating technology that embraces you with consistent, 
+								energy-efficient warmth. Smart systems that understand your comfort needs 
+								and deliver exceptional performance.
+							</p>
+							<div class="feature-list">
+								<div class="feature-item">
+									<div class="item-icon">🔥</div>
+									<div class="item-content">
+										<h4>High-Efficiency Furnaces</h4>
+										<p>Maximum warmth with minimal energy consumption</p>
+									</div>
+								</div>
+								<div class="feature-item">
+									<div class="item-icon">♨️</div>
+									<div class="item-content">
+										<h4>Heat Pump Systems</h4>
+										<p>Innovative dual-function heating and cooling</p>
+									</div>
+								</div>
+								<div class="feature-item">
+									<div class="item-icon">⚡</div>
+									<div class="item-content">
+										<h4>Smart Thermostats</h4>
+										<p>Intelligent climate control at your fingertips</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Air Quality -->
+					<div class="service-feature air-quality">
+						<div class="feature-content">
+							<div class="feature-badge">Air Quality</div>
+							<h2>Breathe Better. Live Better.</h2>
+							<p class="feature-description">
+								Pure, healthy air for your home or business. Our advanced air quality 
+								solutions remove pollutants, allergens, and contaminants, creating an 
+								environment where you and your family can thrive.
+							</p>
+							<div class="feature-list">
+								<div class="feature-item">
+									<div class="item-icon">🌬️</div>
+									<div class="item-content">
+										<h4>Air Purification</h4>
+										<p>Medical-grade filtration for the cleanest indoor air</p>
+									</div>
+								</div>
+								<div class="feature-item">
+									<div class="item-icon">💧</div>
+									<div class="item-content">
+										<h4>Humidity Control</h4>
+										<p>Perfect balance for comfort and health</p>
+									</div>
+								</div>
+								<div class="feature-item">
+									<div class="item-icon">✨</div>
+									<div class="item-content">
+										<h4>Duct Cleaning</h4>
+										<p>Professional cleaning for optimal system performance</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="feature-visual air-quality-visual"></div>
+					</div>
+				</div>
 			</section>
 
-			<section class="service">
-				<h2>🔧 Maintenance Plans</h2>
-				<p>
-					Protect your investment with our preventive maintenance plans. Regular maintenance helps:
-				</p>
-				<ul>
-					<li>Extend the life of your HVAC system</li>
-					<li>Reduce energy costs by up to 30%</li>
-					<li>Prevent costly breakdowns</li>
-					<li>Maintain manufacturer warranties</li>
-					<li>Improve indoor air quality</li>
-				</ul>
-				<p>
-					Our maintenance plans include priority scheduling, discounted repairs, and comprehensive 
-					system inspections performed by our certified technicians.
-				</p>
+			<!-- Commercial Services -->
+			<section class="commercial-section">
+				<div class="container">
+					<div class="commercial-header">
+						<h2>Built for Business</h2>
+						<p>Enterprise-grade HVAC solutions that keep your business running smoothly</p>
+					</div>
+					<div class="commercial-grid">
+						<div class="commercial-card">
+							<div class="card-icon">🏢</div>
+							<h3>Commercial Installation</h3>
+							<p>Scalable systems designed for optimal efficiency and reliability</p>
+						</div>
+						<div class="commercial-card">
+							<div class="card-icon">🔄</div>
+							<h3>Preventive Maintenance</h3>
+							<p>Proactive care that minimizes downtime and maximizes performance</p>
+						</div>
+						<div class="commercial-card">
+							<div class="card-icon">⚡</div>
+							<h3>Energy Optimization</h3>
+							<p>Smart solutions that reduce costs and environmental impact</p>
+						</div>
+						<div class="commercial-card">
+							<div class="card-icon">🚨</div>
+							<h3>24/7 Emergency Service</h3>
+							<p>Always available when your business needs us most</p>
+						</div>
+					</div>
+				</div>
 			</section>
 
-			<section class="service">
-				<h2>🚨 Emergency Services</h2>
-				<p>
-					HVAC emergencies don't wait for business hours. That's why Subzero HVAC offers 24/7 
-					emergency repair services. Whether your air conditioning fails on the hottest day of summer 
-					or your furnace stops working in the middle of winter, our emergency team is ready to respond.
-				</p>
-				<p>
-					<strong>Call us anytime for emergency service!</strong>
-				</p>
+			<!-- Maintenance Plans -->
+			<section class="maintenance-section">
+				<div class="container">
+					<div class="maintenance-content">
+						<div class="maintenance-info">
+							<div class="feature-badge">Protection</div>
+							<h2>Peace of Mind Protection</h2>
+							<p class="large-text">
+								Invest in the longevity and performance of your HVAC system with our 
+								comprehensive maintenance plans.
+							</p>
+							<div class="benefits-list">
+								<div class="benefit">
+									<span class="check">✓</span>
+									<span>Priority scheduling and dedicated support</span>
+								</div>
+								<div class="benefit">
+									<span class="check">✓</span>
+									<span>Up to 30% reduction in energy costs</span>
+								</div>
+								<div class="benefit">
+									<span class="check">✓</span>
+									<span>Extended system lifespan and reliability</span>
+								</div>
+								<div class="benefit">
+									<span class="check">✓</span>
+									<span>Exclusive discounts on repairs and upgrades</span>
+								</div>
+								<div class="benefit">
+									<span class="check">✓</span>
+									<span>Comprehensive inspections by certified experts</span>
+								</div>
+							</div>
+							<a href="/#contact" class="btn-elegant">Explore Plans</a>
+						</div>
+						<div class="maintenance-stats">
+							<div class="stat">
+								<div class="stat-number">15+</div>
+								<div class="stat-label">Years Experience</div>
+							</div>
+							<div class="stat">
+								<div class="stat-number">10K+</div>
+								<div class="stat-label">Happy Customers</div>
+							</div>
+							<div class="stat">
+								<div class="stat-number">24/7</div>
+								<div class="stat-label">Emergency Service</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 
-			<section class="service">
-				<h2>✅ Why Choose Subzero HVAC?</h2>
-				<ul>
-					<li><strong>Certified Technicians:</strong> Our team is fully licensed, insured, and certified</li>
-					<li><strong>Upfront Pricing:</strong> No hidden fees—you'll know the cost before we start</li>
-					<li><strong>Quality Workmanship:</strong> We stand behind our work with comprehensive warranties</li>
-					<li><strong>Same-Day Service:</strong> We understand urgency and respond quickly</li>
-					<li><strong>Energy-Efficient Solutions:</strong> We help you save money on utility bills</li>
-					<li><strong>Customer Satisfaction:</strong> Your comfort is our priority</li>
-				</ul>
+			<!-- Why Choose Us -->
+			<section class="excellence-section">
+				<div class="container">
+					<h2 class="section-title">The Subzero Standard</h2>
+					<p class="section-subtitle">
+						Excellence isn't just what we do. It's who we are.
+					</p>
+					<div class="excellence-grid">
+						<div class="excellence-card">
+							<div class="excellence-number">01</div>
+							<h3>Certified Excellence</h3>
+							<p>Every technician is fully licensed, insured, and continuously trained on cutting-edge HVAC technology</p>
+						</div>
+						<div class="excellence-card">
+							<div class="excellence-number">02</div>
+							<h3>Transparent Pricing</h3>
+							<p>Upfront, honest estimates with no hidden fees. You'll always know what to expect</p>
+						</div>
+						<div class="excellence-card">
+							<div class="excellence-number">03</div>
+							<h3>Quality Guaranteed</h3>
+							<p>We stand behind our work with comprehensive warranties and 100% satisfaction guarantee</p>
+						</div>
+						<div class="excellence-card">
+							<div class="excellence-number">04</div>
+							<h3>Same-Day Service</h3>
+							<p>Fast response times because your comfort can't wait</p>
+						</div>
+						<div class="excellence-card">
+							<div class="excellence-number">05</div>
+							<h3>Energy Efficient</h3>
+							<p>Smart solutions that save you money while protecting the environment</p>
+						</div>
+						<div class="excellence-card">
+							<div class="excellence-number">06</div>
+							<h3>Customer First</h3>
+							<p>Your comfort and satisfaction drive everything we do</p>
+						</div>
+					</div>
+				</div>
 			</section>
 
-			<section class="cta">
-				<h2>Ready to Get Started?</h2>
-				<p>
-					Contact Subzero HVAC today for a free estimate on installation or to schedule a service call. 
-					Our friendly team is here to answer your questions and provide the HVAC solutions you need.
-				</p>
-				<p>
-					<strong>Schedule your service today and experience the Subzero HVAC difference!</strong>
-				</p>
+			<!-- Final CTA -->
+			<section class="final-cta">
+				<div class="container">
+					<h2>Ready to Experience Excellence?</h2>
+					<p>Let's create the perfect climate for your space</p>
+					<a href="/#contact" class="btn-primary-large">Get Started</a>
+				</div>
 			</section>
 		</main>
 		<Footer />
@@ -116,83 +280,514 @@ import { SITE_TITLE } from '../consts';
 </html>
 
 <style>
-	.intro {
-		font-size: 1.2em;
-		color: rgb(var(--gray-dark));
-		margin-bottom: 2em;
+	* {
+		box-sizing: border-box;
+	}
+
+	.services-page {
+		padding: 0;
+		overflow-x: hidden;
+		background: white;
+	}
+
+	.container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 3rem;
+		width: 100%;
+	}
+
+	/* Hero Section */
+	.hero {
+		background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+		color: white;
+		padding: 8rem 2rem 6rem;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 1;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.hero h1 {
+		font-size: 3.5rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+		letter-spacing: -0.02em;
+		line-height: 1.1;
+		color: white;
+	}
+
+	.hero-subtitle {
+		font-size: 1.3rem;
+		opacity: 0.9;
+		font-weight: 400;
+		letter-spacing: 0.01em;
+	}
+
+	/* Services Showcase */
+	.services-showcase {
+		padding: 0;
+	}
+
+	.service-feature {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0;
+		min-height: 600px;
+		align-items: center;
+		max-width: 100%;
+		overflow: hidden;
+	}
+
+	.service-feature.heating {
+		background: #f8fafc;
+	}
+
+	.feature-content {
+		padding: 5rem 4rem;
+		max-width: 100%;
+	}
+
+	.feature-badge {
+		display: inline-block;
+		padding: 0.5rem 1.5rem;
+		background: rgba(30, 58, 138, 0.1);
+		color: #1e3a8a;
+		border-radius: 50px;
+		font-size: 0.875rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: 1.5rem;
+	}
+
+	.feature-content h2 {
+		font-size: 2.5rem;
+		font-weight: 600;
+		margin-bottom: 1.5rem;
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+		color: #0f172a;
+	}
+
+	.feature-description {
+		font-size: 1.125rem;
+		line-height: 1.7;
+		color: #475569;
+		margin-bottom: 2.5rem;
+	}
+
+	.feature-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.feature-item {
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+	}
+
+	.item-icon {
+		font-size: 2rem;
+		flex-shrink: 0;
+	}
+
+	.item-content h4 {
+		font-size: 1.125rem;
+		font-weight: 600;
+		margin: 0 0 0.3rem 0;
+		color: #0f172a;
+	}
+
+	.item-content p {
+		color: #64748b;
 		line-height: 1.6;
+		margin: 0;
+		font-size: 0.95rem;
 	}
 
-	.service {
-		margin: 3em 0;
-		padding: 2em 0;
-		border-bottom: 1px solid rgb(var(--gray-light));
+	.feature-visual {
+		height: 600px;
+		background-size: cover;
+		background-position: center;
+		position: relative;
 	}
 
-	.service:last-of-type {
-		border-bottom: none;
+	.cooling-visual {
+		background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
 	}
 
-	.service h2 {
-		color: var(--accent);
-		margin-bottom: 1em;
+	.heating-visual {
+		background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
 	}
 
-	.service h3 {
-		color: rgb(var(--black));
-		margin-top: 1.5em;
-		margin-bottom: 0.75em;
-		font-size: 1.5em;
+	.air-quality-visual {
+		background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
 	}
 
-	.service ul {
-		margin-left: 1.5em;
-		margin-bottom: 1.5em;
+	/* Commercial Section */
+	.commercial-section {
+		background: #0f172a;
+		color: white;
+		padding: 6rem 0;
 	}
 
-	.service li {
-		margin-bottom: 0.75em;
-		line-height: 1.6;
+	.commercial-header {
+		text-align: center;
+		margin-bottom: 4rem;
 	}
 
-	.service strong {
-		color: rgb(var(--black));
+	.commercial-header h2 {
+		font-size: 2.5rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: white;
 	}
 
-	.cta {
-		background: linear-gradient(135deg, rgba(var(--accent-dark), 0.05), rgba(var(--accent), 0.05));
-		padding: 2em;
-		border-radius: 8px;
-		margin-top: 3em;
+	.commercial-header p {
+		font-size: 1.125rem;
+		opacity: 0.8;
+	}
+
+	.commercial-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.commercial-card {
+		background: rgba(255,255,255,0.05);
+		backdrop-filter: blur(10px);
+		padding: 3rem 2rem;
+		border-radius: 16px;
+		border: 1px solid rgba(255,255,255,0.1);
+		transition: all 0.3s ease;
+	}
+
+	.commercial-card:hover {
+		background: rgba(255,255,255,0.08);
+		transform: translateY(-5px);
+	}
+
+	.card-icon {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.commercial-card h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.commercial-card p {
+		color: rgba(255,255,255,0.8);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	/* Maintenance Section */
+	.maintenance-section {
+		padding: 6rem 0;
+		background: white;
+	}
+
+	.maintenance-content {
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		gap: 5rem;
+		align-items: center;
+	}
+
+	.large-text {
+		font-size: 1.125rem;
+		line-height: 1.7;
+		color: #475569;
+		margin-bottom: 2.5rem;
+	}
+
+	.benefits-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.benefit {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-size: 1rem;
+		color: #334155;
+	}
+
+	.check {
+		width: 24px;
+		height: 24px;
+		background: #1e3a8a;
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0.875rem;
+		flex-shrink: 0;
+	}
+
+	.maintenance-stats {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.stat {
+		background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+		padding: 3rem 2rem;
+		border-radius: 16px;
+		text-align: center;
+		color: white;
+	}
+
+	.stat-number {
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		font-size: 1rem;
+		opacity: 0.9;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	/* Excellence Section */
+	.excellence-section {
+		padding: 6rem 0;
+		background: #f8fafc;
+	}
+
+	.section-title {
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: #0f172a;
+	}
+
+	.section-subtitle {
+		text-align: center;
+		font-size: 1.125rem;
+		color: #64748b;
+		margin-bottom: 4rem;
+	}
+
+	.excellence-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2rem;
+	}
+
+	.excellence-card {
+		background: white;
+		padding: 3rem 2rem;
+		border-radius: 16px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+		transition: all 0.3s ease;
+	}
+
+	.excellence-card:hover {
+		box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		transform: translateY(-3px);
+	}
+
+	.excellence-number {
+		font-size: 0.875rem;
+		color: #1e3a8a;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.excellence-card h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: #0f172a;
+	}
+
+	.excellence-card p {
+		color: #64748b;
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	/* Final CTA */
+	.final-cta {
+		background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+		color: white;
+		padding: 6rem 2rem;
 		text-align: center;
 	}
 
-	.cta h2 {
-		color: var(--accent);
-		margin-bottom: 0.5em;
+	.final-cta h2 {
+		font-size: 2.5rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: white;
 	}
 
-	.cta p {
-		font-size: 1.1em;
-		margin-bottom: 1em;
+	.final-cta p {
+		font-size: 1.25rem;
+		opacity: 0.9;
+		margin-bottom: 3rem;
 	}
 
-	.cta strong {
-		color: var(--accent-dark);
-		font-size: 1.15em;
+	/* Buttons */
+	.btn-elegant,
+	.btn-primary-large {
+		display: inline-block;
+		padding: 1rem 2.5rem;
+		background: #1e3a8a;
+		color: white;
+		text-decoration: none;
+		border-radius: 50px;
+		font-weight: 600;
+		font-size: 1.125rem;
+		transition: all 0.3s ease;
+		border: none;
 	}
 
-	@media (max-width: 720px) {
-		.intro {
-			font-size: 1.1em;
+	.btn-elegant:hover,
+	.btn-primary-large:hover {
+		background: #1e40af;
+		transform: translateY(-2px);
+		box-shadow: 0 10px 30px rgba(30, 58, 138, 0.3);
+	}
+
+	.btn-primary-large {
+		padding: 1.25rem 3rem;
+		font-size: 1.25rem;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 1024px) {
+		.service-feature {
+			grid-template-columns: 1fr;
 		}
 
-		.service {
-			padding: 1.5em 0;
+		.feature-visual {
+			height: 400px;
+			order: -1;
 		}
 
-		.cta {
-			padding: 1.5em;
+		.feature-content {
+			padding: 4rem 2rem;
+		}
+
+		.maintenance-content {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+
+		.maintenance-stats {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			padding: 0 1.5rem;
+		}
+
+		.hero {
+			padding: 4rem 1.5rem 3rem;
+		}
+
+		.hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.feature-content h2 {
+			font-size: 1.75rem;
+		}
+
+		.feature-description {
+			font-size: 1rem;
+		}
+
+		.feature-content {
+			padding: 2.5rem 1.5rem;
+		}
+
+		.feature-visual {
+			height: 300px;
+		}
+
+		.item-icon {
+			font-size: 1.5rem;
+		}
+
+		.item-content h4 {
+			font-size: 1rem;
+		}
+
+		.item-content p {
+			font-size: 0.875rem;
+		}
+
+		.commercial-header h2,
+		.section-title,
+		.final-cta h2 {
+			font-size: 1.75rem;
+		}
+
+		.commercial-header p {
+			font-size: 1rem;
+		}
+
+		.commercial-section,
+		.maintenance-section,
+		.excellence-section {
+			padding: 3rem 0;
+		}
+
+		.maintenance-stats {
+			grid-template-columns: 1fr;
+		}
+
+		.excellence-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.stat {
+			padding: 2rem 1.5rem;
+		}
+
+		.stat-number {
+			font-size: 2.5rem;
 		}
 	}
 </style>
