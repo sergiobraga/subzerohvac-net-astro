@@ -1,62 +1,430 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`About Us | ${SITE_TITLE}`} description="Learn about Subzero HVAC - your trusted partner for heating, cooling, and air quality solutions. Professional service, certified technicians, and guaranteed satisfaction." />
+	</head>
+	<body>
+		<Header />
+		<main class="about-page">
+			<section class="about-hero">
+				<div class="container">
+					<h1>About Subzero HVAC</h1>
+					<p class="lead">Your Trusted Partner for Comfort Solutions Since 2010</p>
+				</div>
+			</section>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+			<section class="about-content">
+				<div class="container">
+					<div class="content-grid">
+						<div class="main-content">
+							<h2>Our Story</h2>
+							<p>
+								Founded in 2010, Subzero HVAC began with a simple mission: to provide exceptional 
+								heating, cooling, and air quality services with integrity and professionalism. 
+								What started as a small, family-owned business has grown into one of the most 
+								trusted HVAC companies in the region.
+							</p>
+							<p>
+								Our success is built on a foundation of technical expertise, honest communication, 
+								and a genuine commitment to our customers' comfort. We believe that everyone deserves 
+								to live and work in a comfortable environment, and we're dedicated to making that 
+								a reality through quality service and reliable solutions.
+							</p>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+							<h2>What Sets Us Apart</h2>
+							<p>
+								At Subzero HVAC, we understand that your HVAC system is a significant investment. 
+								That's why we go above and beyond to ensure every installation, repair, and 
+								maintenance service exceeds your expectations.
+							</p>
+							<ul class="features-list">
+								<li>
+									<strong>Certified Excellence:</strong> Our technicians are fully licensed, insured, 
+									and continuously trained on the latest HVAC technologies and best practices.
+								</li>
+								<li>
+									<strong>Transparent Pricing:</strong> We provide upfront, honest pricing with no 
+									hidden fees. You'll always know what to expect before we begin any work.
+								</li>
+								<li>
+									<strong>24/7 Emergency Service:</strong> HVAC emergencies don't wait for business 
+									hours, and neither do we. Our team is available around the clock for urgent repairs.
+								</li>
+								<li>
+									<strong>Quality Guaranteed:</strong> We stand behind our work with comprehensive 
+									warranties and a 100% satisfaction guarantee on all services.
+								</li>
+								<li>
+									<strong>Energy Efficiency Focus:</strong> We help you reduce energy costs and 
+									environmental impact with high-efficiency systems and expert maintenance.
+								</li>
+							</ul>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+							<h2>Our Commitment to You</h2>
+							<p>
+								When you choose Subzero HVAC, you're choosing a partner who cares about your comfort 
+								and satisfaction. We treat every home and business as if it were our own, providing 
+								the same level of service we'd expect for our families.
+							</p>
+							<p>
+								Our team takes pride in building lasting relationships with our customers. Many of 
+								our clients have been with us since day one, and they continue to trust us because 
+								we deliver on our promises every single time.
+							</p>
+						</div>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+						<div class="sidebar">
+							<div class="stat-card">
+								<div class="stat-number">15+</div>
+								<div class="stat-label">Years of Experience</div>
+							</div>
+							<div class="stat-card">
+								<div class="stat-number">10,000+</div>
+								<div class="stat-label">Happy Customers</div>
+							</div>
+							<div class="stat-card">
+								<div class="stat-number">24/7</div>
+								<div class="stat-label">Emergency Service</div>
+							</div>
+							<div class="stat-card">
+								<div class="stat-number">100%</div>
+								<div class="stat-label">Satisfaction Guaranteed</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="values-section">
+				<div class="container">
+					<h2>Our Core Values</h2>
+					<div class="values-grid">
+						<div class="value-card">
+							<div class="value-icon">🎯</div>
+							<h3>Integrity</h3>
+							<p>We believe in honest communication and transparent business practices. You can trust us to provide truthful assessments and fair pricing.</p>
+						</div>
+						<div class="value-card">
+							<div class="value-icon">⚡</div>
+							<h3>Excellence</h3>
+							<p>We're committed to delivering the highest quality workmanship and service on every job, no matter how big or small.</p>
+						</div>
+						<div class="value-card">
+							<div class="value-icon">🤝</div>
+							<h3>Reliability</h3>
+							<p>When we make a commitment, we keep it. You can count on us to show up on time and get the job done right.</p>
+						</div>
+						<div class="value-card">
+							<div class="value-icon">💡</div>
+							<h3>Innovation</h3>
+							<p>We stay current with the latest HVAC technologies and techniques to provide you with the most efficient solutions.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta-section">
+				<div class="container">
+					<h2>Ready to Experience the Subzero HVAC Difference?</h2>
+					<p>Join thousands of satisfied customers who trust us for their heating and cooling needs.</p>
+					<a href="/#contact" class="btn btn-primary">Contact Us Today</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.about-page {
+		padding: 0;
+	}
+
+	.container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 3rem;
+	}
+
+	/* Hero Section */
+	.about-hero {
+		background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+		color: white;
+		padding: 5rem 2rem 4rem;
+		text-align: center;
+	}
+
+	.about-hero h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.lead {
+		font-size: 1.5rem;
+		opacity: 0.95;
+		font-weight: 500;
+	}
+
+	/* Content Section */
+	.about-content {
+		padding: 5rem 0;
+		background: white;
+	}
+
+	.content-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 4rem;
+		align-items: start;
+	}
+
+	.main-content h2 {
+		color: rgb(var(--black));
+		font-size: 2rem;
+		margin-top: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.main-content h2:first-child {
+		margin-top: 0;
+	}
+
+	.main-content p {
+		line-height: 1.8;
+		color: rgb(var(--gray-dark));
+		margin-bottom: 1.5rem;
+		font-size: 1.1rem;
+	}
+
+	.features-list {
+		list-style: none;
+		padding: 0;
+		margin: 2rem 0;
+	}
+
+	.features-list li {
+		padding: 1rem 0;
+		border-bottom: 1px solid rgb(var(--gray-light));
+		line-height: 1.8;
+		color: rgb(var(--gray-dark));
+		font-size: 1.05rem;
+	}
+
+	.features-list li:last-child {
+		border-bottom: none;
+	}
+
+	.features-list strong {
+		color: var(--accent);
+		display: block;
+		margin-bottom: 0.3rem;
+		font-size: 1.1rem;
+	}
+
+	/* Sidebar Stats */
+	.sidebar {
+		position: sticky;
+		top: 2rem;
+	}
+
+	.stat-card {
+		background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+		color: white;
+		padding: 2rem;
+		border-radius: 12px;
+		text-align: center;
+		margin-bottom: 1.5rem;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	}
+
+	.stat-number {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		font-size: 1rem;
+		opacity: 0.95;
+		font-weight: 500;
+	}
+
+	/* Values Section */
+	.values-section {
+		padding: 5rem 0;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+	}
+
+	.values-section h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: rgb(var(--black));
+	}
+
+	.values-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.value-card {
+		background: white;
+		padding: 2.5rem 2rem;
+		border-radius: 12px;
+		text-align: center;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.value-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+	}
+
+	.value-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.value-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: rgb(var(--black));
+	}
+
+	.value-card p {
+		color: rgb(var(--gray));
+		line-height: 1.7;
+		font-size: 1rem;
+	}
+
+	/* CTA Section */
+	.cta-section {
+		background: white;
+		padding: 5rem 0;
+		text-align: center;
+	}
+
+	.cta-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: rgb(var(--black));
+	}
+
+	.cta-section p {
+		font-size: 1.3rem;
+		color: rgb(var(--gray));
+		margin-bottom: 2rem;
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 1rem 2.5rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		transition: all 0.3s ease;
+		border: none;
+		cursor: pointer;
+	}
+
+	.btn-primary {
+		background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+		color: white;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+	}
+
+	.btn-primary:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+	}
+
+	/* Responsive Design */
+	@media (max-width: 1024px) {
+		.content-grid {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+
+		.sidebar {
+			position: static;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.5rem;
+		}
+
+		.stat-card {
+			margin-bottom: 0;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.about-hero {
+			padding: 4rem 1.5rem 3rem;
+		}
+
+		.about-hero h1 {
+			font-size: 2.2rem;
+		}
+
+		.lead {
+			font-size: 1.2rem;
+		}
+
+		.container {
+			padding: 0 1.5rem;
+		}
+
+		.about-content {
+			padding: 3rem 0;
+		}
+
+		.main-content h2 {
+			font-size: 1.7rem;
+		}
+
+		.main-content p {
+			font-size: 1rem;
+		}
+
+		.sidebar {
+			grid-template-columns: 1fr;
+		}
+
+		.values-section {
+			padding: 3rem 0;
+		}
+
+		.values-section h2 {
+			font-size: 2rem;
+		}
+
+		.values-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-section {
+			padding: 3rem 0;
+		}
+
+		.cta-section h2 {
+			font-size: 2rem;
+		}
+
+		.cta-section p {
+			font-size: 1.1rem;
+		}
+	}
+</style>

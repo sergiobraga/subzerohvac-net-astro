@@ -1,0 +1,198 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Services | ${SITE_TITLE}`} description="Professional HVAC services including installation, repair, maintenance, and emergency services for residential and commercial properties." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Our Services</h1>
+			<p class="intro">
+				At Subzero HVAC, we provide comprehensive heating, ventilation, and air conditioning services 
+				to keep your home or business comfortable year-round. Our certified technicians are committed 
+				to delivering exceptional service with every job.
+			</p>
+
+			<section class="service">
+				<h2>🏠 Residential HVAC Services</h2>
+				<h3>Air Conditioning</h3>
+				<ul>
+					<li><strong>AC Installation:</strong> Expert installation of central air conditioning systems, ductless mini-splits, and heat pumps</li>
+					<li><strong>AC Repair:</strong> Fast, reliable repairs for all makes and models</li>
+					<li><strong>AC Maintenance:</strong> Seasonal tune-ups to keep your system running efficiently</li>
+					<li><strong>AC Replacement:</strong> Upgrade to a new, energy-efficient cooling system</li>
+				</ul>
+
+				<h3>Heating Systems</h3>
+				<ul>
+					<li><strong>Furnace Installation:</strong> Gas, electric, and oil furnace installation</li>
+					<li><strong>Furnace Repair:</strong> Quick diagnosis and repair of heating issues</li>
+					<li><strong>Heat Pump Services:</strong> Installation, repair, and maintenance of heat pump systems</li>
+					<li><strong>Boiler Services:</strong> Boiler installation, repair, and maintenance</li>
+				</ul>
+
+				<h3>Indoor Air Quality</h3>
+				<ul>
+					<li><strong>Air Purification Systems:</strong> Whole-home air purifiers and UV light systems</li>
+					<li><strong>Humidifiers & Dehumidifiers:</strong> Maintain optimal humidity levels</li>
+					<li><strong>Air Duct Cleaning:</strong> Professional duct cleaning for healthier air</li>
+					<li><strong>Ventilation Solutions:</strong> Energy recovery ventilators and fresh air systems</li>
+				</ul>
+			</section>
+
+			<section class="service">
+				<h2>🏢 Commercial HVAC Services</h2>
+				<ul>
+					<li><strong>Commercial Installation:</strong> Rooftop units, split systems, and packaged HVAC systems</li>
+					<li><strong>Preventive Maintenance:</strong> Scheduled maintenance programs to minimize downtime</li>
+					<li><strong>Emergency Repairs:</strong> 24/7 commercial HVAC repair services</li>
+					<li><strong>Energy Audits:</strong> Identify opportunities to reduce energy costs</li>
+					<li><strong>System Design:</strong> Custom HVAC solutions for new construction and renovations</li>
+				</ul>
+			</section>
+
+			<section class="service">
+				<h2>🔧 Maintenance Plans</h2>
+				<p>
+					Protect your investment with our preventive maintenance plans. Regular maintenance helps:
+				</p>
+				<ul>
+					<li>Extend the life of your HVAC system</li>
+					<li>Reduce energy costs by up to 30%</li>
+					<li>Prevent costly breakdowns</li>
+					<li>Maintain manufacturer warranties</li>
+					<li>Improve indoor air quality</li>
+				</ul>
+				<p>
+					Our maintenance plans include priority scheduling, discounted repairs, and comprehensive 
+					system inspections performed by our certified technicians.
+				</p>
+			</section>
+
+			<section class="service">
+				<h2>🚨 Emergency Services</h2>
+				<p>
+					HVAC emergencies don't wait for business hours. That's why Subzero HVAC offers 24/7 
+					emergency repair services. Whether your air conditioning fails on the hottest day of summer 
+					or your furnace stops working in the middle of winter, our emergency team is ready to respond.
+				</p>
+				<p>
+					<strong>Call us anytime for emergency service!</strong>
+				</p>
+			</section>
+
+			<section class="service">
+				<h2>✅ Why Choose Subzero HVAC?</h2>
+				<ul>
+					<li><strong>Certified Technicians:</strong> Our team is fully licensed, insured, and certified</li>
+					<li><strong>Upfront Pricing:</strong> No hidden fees—you'll know the cost before we start</li>
+					<li><strong>Quality Workmanship:</strong> We stand behind our work with comprehensive warranties</li>
+					<li><strong>Same-Day Service:</strong> We understand urgency and respond quickly</li>
+					<li><strong>Energy-Efficient Solutions:</strong> We help you save money on utility bills</li>
+					<li><strong>Customer Satisfaction:</strong> Your comfort is our priority</li>
+				</ul>
+			</section>
+
+			<section class="cta">
+				<h2>Ready to Get Started?</h2>
+				<p>
+					Contact Subzero HVAC today for a free estimate on installation or to schedule a service call. 
+					Our friendly team is here to answer your questions and provide the HVAC solutions you need.
+				</p>
+				<p>
+					<strong>Schedule your service today and experience the Subzero HVAC difference!</strong>
+				</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.intro {
+		font-size: 1.2em;
+		color: rgb(var(--gray-dark));
+		margin-bottom: 2em;
+		line-height: 1.6;
+	}
+
+	.service {
+		margin: 3em 0;
+		padding: 2em 0;
+		border-bottom: 1px solid rgb(var(--gray-light));
+	}
+
+	.service:last-of-type {
+		border-bottom: none;
+	}
+
+	.service h2 {
+		color: var(--accent);
+		margin-bottom: 1em;
+	}
+
+	.service h3 {
+		color: rgb(var(--black));
+		margin-top: 1.5em;
+		margin-bottom: 0.75em;
+		font-size: 1.5em;
+	}
+
+	.service ul {
+		margin-left: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	.service li {
+		margin-bottom: 0.75em;
+		line-height: 1.6;
+	}
+
+	.service strong {
+		color: rgb(var(--black));
+	}
+
+	.cta {
+		background: linear-gradient(135deg, rgba(var(--accent-dark), 0.05), rgba(var(--accent), 0.05));
+		padding: 2em;
+		border-radius: 8px;
+		margin-top: 3em;
+		text-align: center;
+	}
+
+	.cta h2 {
+		color: var(--accent);
+		margin-bottom: 0.5em;
+	}
+
+	.cta p {
+		font-size: 1.1em;
+		margin-bottom: 1em;
+	}
+
+	.cta strong {
+		color: var(--accent-dark);
+		font-size: 1.15em;
+	}
+
+	@media (max-width: 720px) {
+		.intro {
+			font-size: 1.1em;
+		}
+
+		.service {
+			padding: 1.5em 0;
+		}
+
+		.cta {
+			padding: 1.5em;
+		}
+	}
+</style>

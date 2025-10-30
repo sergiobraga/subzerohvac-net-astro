@@ -44,10 +44,10 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 720px;
-	max-width: calc(100% - 2em);
+	width: 1400px;
+	max-width: calc(100% - 4em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 3em 2em;
 }
 h1,
 h2,

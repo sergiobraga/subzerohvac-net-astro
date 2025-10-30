@@ -8,43 +8,863 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={`${SITE_TITLE} - Professional HVAC Services`} description="Professional heating, cooling, and air quality solutions. 24/7 emergency service, certified technicians, and 100% satisfaction guaranteed. Your comfort is our priority." />
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+		<main class="homepage">
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-content">
+					<h1 class="hero-title">Your Comfort Is Our Priority</h1>
+					<p class="hero-subtitle">
+						Professional HVAC Services You Can Trust
+					</p>
+					<p class="hero-description">
+						Expert heating, cooling, and air quality solutions for your home or business. 
+						Licensed, insured, and available 24/7 for emergencies.
+					</p>
+					<div class="hero-cta">
+						<a href="#contact" class="btn btn-primary">
+							Get Free Estimate
+						</a>
+						<a href="#contact" class="btn btn-secondary">
+							Schedule Service
+						</a>
+					</div>
+					<div class="hero-badges">
+						<div class="badge">
+							<span class="badge-icon">✓</span>
+							<span>24/7 Emergency Service</span>
+						</div>
+						<div class="badge">
+							<span class="badge-icon">✓</span>
+							<span>Licensed & Insured</span>
+						</div>
+						<div class="badge">
+							<span class="badge-icon">✓</span>
+							<span>100% Satisfaction Guaranteed</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Why Choose Us Section -->
+			<section class="why-choose-us">
+				<div class="container">
+					<h2 class="section-title">Why Choose Subzero HVAC?</h2>
+					<p class="section-subtitle">
+						We're committed to providing exceptional service and ensuring your complete satisfaction
+					</p>
+					<div class="features-grid">
+						<div class="feature-card">
+							<div class="feature-icon">🚀</div>
+							<h3>Fast Response Time</h3>
+							<p>Same-day service available for most repairs. We understand HVAC emergencies can't wait.</p>
+						</div>
+						<div class="feature-card">
+							<div class="feature-icon">💰</div>
+							<h3>Transparent Pricing</h3>
+							<p>Upfront, honest pricing with no hidden fees. You'll know the cost before we start any work.</p>
+						</div>
+						<div class="feature-card">
+							<div class="feature-icon">👨‍🔧</div>
+							<h3>Certified Technicians</h3>
+							<p>Our team is fully licensed, insured, and continuously trained on the latest HVAC technology.</p>
+						</div>
+						<div class="feature-card">
+							<div class="feature-icon">⭐</div>
+							<h3>100% Satisfaction</h3>
+							<p>We guarantee our work and stand behind every installation, repair, and maintenance service.</p>
+						</div>
+						<div class="feature-card">
+							<div class="feature-icon">🌡️</div>
+							<h3>Energy Efficient</h3>
+							<p>We help you save on energy costs with high-efficiency systems and expert maintenance.</p>
+						</div>
+						<div class="feature-card">
+							<div class="feature-icon">🏆</div>
+							<h3>Award-Winning Service</h3>
+							<p>Recognized for excellence in HVAC service and customer satisfaction in our community.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services Overview Section -->
+			<section class="services-overview">
+				<div class="container">
+					<h2 class="section-title">Our Services</h2>
+					<p class="section-subtitle">
+						Comprehensive HVAC solutions for residential and commercial properties
+					</p>
+					<div class="services-grid">
+						<div class="service-card">
+							<div class="service-icon">❄️</div>
+							<h3>Air Conditioning</h3>
+							<ul>
+								<li>AC Installation</li>
+								<li>AC Repair & Maintenance</li>
+								<li>Ductless Mini-Splits</li>
+								<li>Central Air Systems</li>
+							</ul>
+							<a href="/services#air-conditioning" class="service-link">Learn More →</a>
+						</div>
+						<div class="service-card">
+							<div class="service-icon">🔥</div>
+							<h3>Heating Systems</h3>
+							<ul>
+								<li>Furnace Installation</li>
+								<li>Furnace Repair</li>
+								<li>Heat Pumps</li>
+								<li>Boiler Services</li>
+							</ul>
+							<a href="/services#heating" class="service-link">Learn More →</a>
+						</div>
+						<div class="service-card">
+							<div class="service-icon">💨</div>
+							<h3>Indoor Air Quality</h3>
+							<ul>
+								<li>Air Purification</li>
+								<li>Humidifiers</li>
+								<li>Duct Cleaning</li>
+								<li>Ventilation Systems</li>
+							</ul>
+							<a href="/services#air-quality" class="service-link">Learn More →</a>
+						</div>
+						<div class="service-card">
+							<div class="service-icon">🏢</div>
+							<h3>Commercial HVAC</h3>
+							<ul>
+								<li>Commercial Installation</li>
+								<li>Preventive Maintenance</li>
+								<li>24/7 Emergency Repairs</li>
+								<li>Energy Audits</li>
+							</ul>
+							<a href="/services#commercial" class="service-link">Learn More →</a>
+						</div>
+					</div>
+					<div class="services-cta">
+						<a href="/services" class="btn btn-primary">View All Services</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Emergency Service Banner -->
+			<section class="emergency-banner">
+				<div class="container">
+					<div class="emergency-content">
+						<h2>Need Emergency HVAC Service?</h2>
+						<p>We're available 24/7 for heating and cooling emergencies</p>
+						<a href="#contact" class="btn btn-emergency">
+							<span class="pulse-icon">🚨</span> Contact Us Now
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Process Section -->
+			<section class="process">
+				<div class="container">
+					<h2 class="section-title">How We Work</h2>
+					<p class="section-subtitle">
+						Our simple, straightforward process ensures you get the service you need, when you need it
+					</p>
+					<div class="process-steps">
+						<div class="step">
+							<div class="step-number">1</div>
+							<h3>Contact Us</h3>
+							<p>Call or schedule online. We'll discuss your needs and set up a convenient appointment time.</p>
+						</div>
+						<div class="step-arrow">→</div>
+						<div class="step">
+							<div class="step-number">2</div>
+							<h3>Diagnosis</h3>
+							<p>Our certified technician will thoroughly inspect your system and provide honest recommendations.</p>
+						</div>
+						<div class="step-arrow">→</div>
+						<div class="step">
+							<div class="step-number">3</div>
+							<h3>Upfront Pricing</h3>
+							<p>We'll provide a clear, detailed quote with no hidden fees before starting any work.</p>
+						</div>
+						<div class="step-arrow">→</div>
+						<div class="step">
+							<div class="step-number">4</div>
+							<h3>Expert Service</h3>
+							<p>We complete the work efficiently and professionally, leaving your space clean and your system running perfectly.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Testimonials Section -->
+			<section class="testimonials">
+				<div class="container">
+					<h2 class="section-title">What Our Customers Say</h2>
+					<p class="section-subtitle">
+						Don't just take our word for it - hear from our satisfied customers
+					</p>
+					<div class="testimonials-grid">
+						<div class="testimonial-card">
+							<div class="stars">⭐⭐⭐⭐⭐</div>
+							<p class="testimonial-text">
+								"Outstanding service! The technician arrived on time, diagnosed the problem quickly, 
+								and had our AC running again within an hour. Professional and courteous."
+							</p>
+							<p class="testimonial-author">- Sarah M.</p>
+						</div>
+						<div class="testimonial-card">
+							<div class="stars">⭐⭐⭐⭐⭐</div>
+							<p class="testimonial-text">
+								"We've used Subzero HVAC for years. They installed our new furnace last winter and it's 
+								been perfect. Their maintenance plans are worth every penny!"
+							</p>
+							<p class="testimonial-author">- Michael R.</p>
+						</div>
+						<div class="testimonial-card">
+							<div class="stars">⭐⭐⭐⭐⭐</div>
+							<p class="testimonial-text">
+								"Called them for an emergency repair on a Sunday. They arrived within 2 hours and fixed 
+								our heating system. Truly reliable and reasonably priced."
+							</p>
+							<p class="testimonial-author">- Jennifer L.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Section -->
+			<section class="contact" id="contact">
+				<div class="container">
+					<div class="contact-content">
+						<div class="contact-info">
+							<h2>Ready to Get Started?</h2>
+							<p>Contact us today for a free estimate or to schedule a service call.</p>
+							<div class="contact-details">
+								<div class="contact-item">
+									<span class="contact-icon">📧</span>
+									<div>
+										<strong>Email</strong>
+										<a href="mailto:contact@subzerohvac.net">contact@subzerohvac.net</a>
+									</div>
+								</div>
+								<div class="contact-item">
+									<span class="contact-icon">�</span>
+									<div>
+										<strong>Hours</strong>
+										<p>24/7 Emergency Service Available</p>
+										<p>Mon-Fri: 7AM-7PM</p>
+										<p>Sat-Sun: 8AM-5PM</p>
+									</div>
+								</div>
+								<div class="contact-item">
+									<span class="contact-icon">�</span>
+									<div>
+										<strong>Service Area</strong>
+										<p>Serving the Greater Metropolitan Area</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contact-form">
+							<h3>Request Service</h3>
+							<form>
+								<div class="form-group">
+									<input type="text" placeholder="Your Name" required />
+								</div>
+								<div class="form-group">
+									<input type="tel" placeholder="Phone Number" required />
+								</div>
+								<div class="form-group">
+									<input type="email" placeholder="Email Address" required />
+								</div>
+								<div class="form-group">
+									<select required>
+										<option value="">Select Service Type</option>
+										<option value="ac">Air Conditioning</option>
+										<option value="heating">Heating</option>
+										<option value="maintenance">Maintenance</option>
+										<option value="installation">Installation</option>
+										<option value="emergency">Emergency Service</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<textarea placeholder="Tell us about your HVAC needs..." rows="4"></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.homepage {
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 3rem;
+	}
+
+	/* Hero Section */
+	.hero {
+		background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+		color: white;
+		padding: 6rem 2rem 5rem;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+		opacity: 0.3;
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 1;
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+
+	.hero-title {
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		line-height: 1.1;
+		text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+	}
+
+	.hero-subtitle {
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+		font-weight: 600;
+		opacity: 0.95;
+	}
+
+	.hero-description {
+		font-size: 1.2rem;
+		margin-bottom: 2.5rem;
+		opacity: 0.9;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-cta {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 3rem;
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		transition: all 0.3s ease;
+		border: none;
+		cursor: pointer;
+	}
+
+	.btn-primary {
+		background: white;
+		color: #1e3a8a;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+	}
+
+	.btn-primary:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+	}
+
+	.btn-secondary {
+		background: rgba(255,255,255,0.2);
+		color: white;
+		border: 2px solid white;
+		backdrop-filter: blur(10px);
+	}
+
+	.btn-secondary:hover {
+		background: white;
+		color: #1e3a8a;
+	}
+
+	.btn-full {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.hero-badges {
+		display: flex;
+		gap: 2rem;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+	}
+
+	.badge {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1rem;
+		opacity: 0.95;
+	}
+
+	.badge-icon {
+		font-size: 1.3rem;
+		background: rgba(255,255,255,0.2);
+		padding: 0.3rem 0.5rem;
+		border-radius: 4px;
+	}
+
+	/* Section Styles */
+	section {
+		padding: 5rem 0;
+	}
+
+	.section-title {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: rgb(var(--black));
+	}
+
+	.section-subtitle {
+		text-align: center;
+		font-size: 1.2rem;
+		color: rgb(var(--gray));
+		margin-bottom: 3rem;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Why Choose Us */
+	.why-choose-us {
+		background: white;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.feature-card {
+		padding: 2rem;
+		border-radius: 12px;
+		background: white;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		text-align: center;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+	}
+
+	.feature-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.feature-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: rgb(var(--black));
+	}
+
+	.feature-card p {
+		color: rgb(var(--gray));
+		line-height: 1.6;
+	}
+
+	/* Services Overview */
+	.services-overview {
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.service-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+		transition: transform 0.3s ease;
+	}
+
+	.service-card:hover {
+		transform: translateY(-5px);
+	}
+
+	.service-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.service-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: rgb(var(--black));
+	}
+
+	.service-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+
+	.service-card li {
+		padding: 0.5rem 0;
+		color: rgb(var(--gray));
+		border-bottom: 1px solid rgba(var(--gray-light), 0.5);
+	}
+
+	.service-card li:last-child {
+		border-bottom: none;
+	}
+
+	.service-link {
+		color: var(--accent);
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.3s ease;
+	}
+
+	.service-link:hover {
+		color: var(--accent-dark);
+	}
+
+	.services-cta {
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+	/* Emergency Banner */
+	.emergency-banner {
+		background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+		color: white;
+		padding: 3rem 0;
+		text-align: center;
+	}
+
+	.emergency-content h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.emergency-content p {
+		font-size: 1.3rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn-emergency {
+		background: white;
+		color: #dc2626;
+		font-size: 1.3rem;
+		padding: 1.2rem 2.5rem;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+	}
+
+	.btn-emergency:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+	}
+
+	.pulse-icon {
+		animation: pulse 2s infinite;
+	}
+
+	@keyframes pulse {
+		0%, 100% { opacity: 1; }
+		50% { opacity: 0.5; }
+	}
+
+	/* Process Section */
+	.process {
+		background: white;
+	}
+
+	.process-steps {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		margin-top: 3rem;
+		flex-wrap: wrap;
+	}
+
+	.step {
+		flex: 1;
+		min-width: 200px;
+		text-align: center;
+		padding: 2rem 1rem;
+	}
+
+	.step-number {
+		width: 60px;
+		height: 60px;
+		background: var(--accent);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.8rem;
+		font-weight: bold;
+		margin: 0 auto 1.5rem;
+	}
+
+	.step h3 {
+		font-size: 1.3rem;
+		margin-bottom: 0.5rem;
+		color: rgb(var(--black));
+	}
+
+	.step p {
+		color: rgb(var(--gray));
+		font-size: 0.95rem;
+	}
+
+	.step-arrow {
+		font-size: 2rem;
+		color: var(--accent);
+		font-weight: bold;
+	}
+
+	/* Testimonials */
+	.testimonials {
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+	}
+
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.testimonial-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	}
+
+	.stars {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: #fbbf24;
+	}
+
+	.testimonial-text {
+		font-style: italic;
+		color: rgb(var(--gray-dark));
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+
+	.testimonial-author {
+		font-weight: 600;
+		color: rgb(var(--black));
+	}
+
+	/* Contact Section */
+	.contact {
+		background: white;
+		padding: 5rem 0;
+	}
+
+	.contact-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: start;
+	}
+
+	.contact-info h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: rgb(var(--black));
+	}
+
+	.contact-info > p {
+		font-size: 1.2rem;
+		color: rgb(var(--gray));
+		margin-bottom: 2rem;
+	}
+
+	.contact-details {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.contact-item {
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+	}
+
+	.contact-icon {
+		font-size: 2rem;
+	}
+
+	.contact-item strong {
+		display: block;
+		font-size: 1.1rem;
+		color: rgb(var(--black));
+		margin-bottom: 0.3rem;
+	}
+
+	.contact-item a {
+		color: var(--accent);
+		text-decoration: none;
+		font-size: 1.1rem;
+	}
+
+	.contact-item a:hover {
+		text-decoration: underline;
+	}
+
+	.contact-item p {
+		margin: 0.2rem 0;
+		color: rgb(var(--gray));
+	}
+
+	.contact-form {
+		background: linear-gradient(var(--gray-gradient));
+		padding: 2.5rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	}
+
+	.contact-form h3 {
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
+		color: rgb(var(--black));
+	}
+
+	.form-group {
+		margin-bottom: 1.5rem;
+	}
+
+	.form-group input,
+	.form-group select,
+	.form-group textarea {
+		width: 100%;
+		padding: 0.9rem;
+		border: 2px solid rgb(var(--gray-light));
+		border-radius: 8px;
+		font-size: 1rem;
+		font-family: inherit;
+		transition: border-color 0.3s ease;
+	}
+
+	.form-group input:focus,
+	.form-group select:focus,
+	.form-group textarea:focus {
+		outline: none;
+		border-color: var(--accent);
+	}
+
+	/* Responsive Design */
+	@media (max-width: 1024px) {
+		.process-steps {
+			flex-direction: column;
+		}
+
+		.step-arrow {
+			transform: rotate(90deg);
+		}
+
+		.contact-content {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding: 4rem 1rem 3rem;
+		}
+
+		.hero-title {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.3rem;
+		}
+
+		.hero-description {
+			font-size: 1rem;
+		}
+
+		.hero-cta {
+			flex-direction: column;
+		}
+
+		.btn {
+			width: 100%;
+			justify-content: center;
+		}
+
+		.hero-badges {
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.section-title {
+			font-size: 2rem;
+		}
+
+		.features-grid,
+		.services-grid,
+		.testimonials-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.emergency-content h2 {
+			font-size: 1.8rem;
+		}
+
+		.emergency-content p {
+			font-size: 1.1rem;
+		}
+	}
+</style>
